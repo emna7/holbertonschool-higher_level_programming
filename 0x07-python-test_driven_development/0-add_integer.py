@@ -1,7 +1,9 @@
 #!/usr/bin/python3
-
-
 def add_integer(a, b=98):
+    """
+    adds an integer
+    unit tests located in tests/0-add_integer.txt
+    """
     if not isinstance(a, int):
         if isinstance(a, float):
             a = int(a)

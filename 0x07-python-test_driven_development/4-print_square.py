@@ -1,6 +1,10 @@
 #!/usr/bin/python3
 
 def print_square(size):
+    """
+    prints a square of known size
+    unit tests are located in tests/4-print_square.txt
+    """
     if not isinstance(size, (int, float)):
         raise TypeError("size must be an integer")
     elif size < 0:
