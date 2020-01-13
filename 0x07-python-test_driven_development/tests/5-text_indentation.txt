@@ -19,12 +19,9 @@ TypeError: text must be a string
 hello
 
 
->>> text_indentation("holberton:::school?")
-holberton:
+>>> text_indentation("emna.bhadj.messaoud")
+emna.
 <BLANKLINE>
-:
+bhadj.
 <BLANKLINE>
-:
-<BLANKLINE>
-school?
-<BLANKLINE>
+messaoud
