@@ -30,45 +30,37 @@ class Rectangle(Base):
                 raise ValueError(key + " must be >= 0")
 
     @property
-    """ width property """
     def width(self):
         return self.__width
 
     @width.setter
-    """ width setter """
     def width(self, value):
         self.int_validator("width", value)
         self.__width = value
 
     @property
-    """ height property """
     def height(self):
         return self.__height
 
     @height.setter
-    """ height setter """
     def height(self, value):
         self.int_validator("height", value)
         self.__height = value
 
     @property
-    """ x property """
     def x(self):
         return self.__x
 
     @x.setter
-    """ x setter """
     def x(self, value):
         self.int_validator("x", value)
         self.__x = value
 
     @property
-    """ y property """
     def y(self):
         return self.__y
 
     @y.setter
-    """ y setter """
     def y(self, value):
         self.int_validator("y", value)
         self.__y = value
