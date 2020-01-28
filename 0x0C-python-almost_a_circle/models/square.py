@@ -1,10 +1,12 @@
 #!/usr/bin/python3
+""" Square Class """
 from models.base import Base
 from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
     """ Square Class, inheriting from Rectangle """
+
     def __init__(self, size, x=0, y=0, id=None):
         """ init function """
         super().__init__(size, size, x, y, id)
@@ -12,11 +14,10 @@ class Square(Rectangle):
 
     def __str__(self):
         """ str function """
-        return (
-            "[Square] (" + str(self.id) + ") " +
-            str(self.x) + "/" + str(self.y) +
-            " - " + str(self.width)
-            )
+        string1 = "[{}] ({}) ".format(self.__class__.__name__, self.id)
+        string2 = "{}/{} ".format(self.x, self.y)
+        string3 = "- {}".format(self.width)
+        return(string1 + string2 + string3)
 
     @property
     def size(self):
@@ -45,7 +46,7 @@ class Square(Rectangle):
         """ dict function """
         return {
             "id": self.id,
-            "size": self.size,
             "x": self.x,
+            "size": self.size,
             "y": self.y
-        }
+            }
