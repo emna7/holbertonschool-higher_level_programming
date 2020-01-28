@@ -6,6 +6,11 @@ import json
 
 
 class Base():
+    """ Base keeps track of the number of objects
+    Attributes:
+        nb_objects (obj:`int`): private - number of objects
+        id (obj:`int`): public - id of object
+    """
     __nb_objects = 0
 
     def __init__(self, id=None):
