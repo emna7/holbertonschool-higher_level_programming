@@ -3,6 +3,13 @@ from models.base import Base
 
 
 class Rectangle(Base):
+    """ rectangle class - inherits from Base
+    Attributes:
+        width (obj:`int`): width of rectangle
+        height (obj:`int`): height of rectangle
+        x (obj:`int`): x set of rectangle
+        y (obj:`int`): y set of rectangle
+    """
     def __init__(self, width, height, x=0, y=0, id=None):
         """ the init function """
         super().__init__(id)
