@@ -13,19 +13,19 @@ class Rectangle(Base):
     def __init__(self, width, height, x=0, y=0, id=None):
         """ the init function """
         super().__init__(id)
-        self.width == width
-        self.height == height
-        self.x == x
-        self.y == y
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
 
     def int_validator(self, key, value):
         """ the validator function """
         if not isinstance(value, int):
             raise TypeError(key + " must be an integer")
-        elif key is "width" or key is "height":
+        elif key == "width" or key == "height":
             if value <= 0:
                 raise ValueError(key + " must be > 0")
-        elif key is "x" or key is "y":
+        elif key == "x" or key == "y":
             if value < 0:
                 raise ValueError(key + " must be >= 0")
 
