@@ -26,3 +26,13 @@ ZeroDivisionError: division by zero
 Traceback (most recent call last):
 	...
 TypeError: Each row of the matrix must have the same size
+>>> matrix_divided(matrix, 3)
+[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+>>> matrix_divided(matrix, float('inf'))
+[[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+
+>>> matrix = "emna"
+>>> matrix_divided(matrix, 78)
+Traceback (most recent call last):
+...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
