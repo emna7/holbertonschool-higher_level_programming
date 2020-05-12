@@ -6,6 +6,6 @@ request('http://swapi.co/api/films/' + process.argv[2], function (error, respons
   if (error) {
     console.log(error);
   } else {
-    console.log(JSON.parse(body)['title']);
+    console.log(JSON.parse(body).title);
   }
 });
