@@ -1,5 +1,10 @@
 
 >>> add_integer = __import__('0-add_integer').add_integer
+
+>>> f = __import__("0-add_integer").add_integer.__doc__
+>>> len(f) > 1
+True
+
 >>> add_integer(1, 2)
 3
 >>> add_integer(100.3, 2)
@@ -18,6 +23,8 @@ Traceback (most recent call last):
     ...
 TypeError: a must be an integer
 
+>>> add_integer(10, 7.7)
+17
 
 >>> add_integer(2.9, 5.8)
 7
